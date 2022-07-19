@@ -1,0 +1,88 @@
+.aria-expanded {
+  visibility: hidden;
+}
+.mobile-menu {
+  @include flexer($display: flex, $justify: center, $items: center);
+
+  z-index: 1;
+  position: fixed;
+  left:0;
+  top:0;
+  bottom: 0;
+  display: inline-block;
+  height: 100vh;
+  width: 100%;
+  background-color: ($white-color);
+  .active {
+    color: ($hover-color);
+  }
+}
+
+.menu_close-botton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right:13px;
+
+  cursor: pointer;
+  background: #ffffff;
+  &:hover {
+    fill: ($hover-color);
+  }
+}
+.mobile-menu_navigation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+  position: absolute;
+  top: 48px;
+  left: 40px;
+  width: 192px;
+  li {
+    margin-bottom: 32px;
+  }
+  a {
+    color: #212121;
+  }
+  a:hover {
+    color: ($hover-color);
+  }
+}
+
+.mobile-menu_addres {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+  a {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  li {
+    margin-bottom: 32px;
+  }
+  .active {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+.mobile-menu_socials {
+  @include flexer($direction: row, $justify: space-between);
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+  width: 357px;
+  .line-space {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

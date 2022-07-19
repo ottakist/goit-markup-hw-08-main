@@ -1,0 +1,42 @@
+$main-color: #212121;
+$hover-color: #2196f3;
+$gray-color: #757575;
+$dark_gray-color: #2f303a;
+$light-gray-color: #f5f4fa;
+$white-color: #ffffff;
+$main-portfolio-color: #e5e5e5;
+$r-g-b-a: rgba(255, 255, 255, 0.6);
+$semi-gray-color: rgba(47, 48, 58, 0.8);
+$header-special: #ececec;
+$border-color: #afb1b8;
+
+@mixin text-redactor(
+  $style: normal,
+  $weight: 400,
+  $size: 16px,
+  $family: "Roboto",
+  $height: 1.8,
+  $spacing: 0.03em
+) {
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  font-family: $family;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin flexer(
+  $display: flex,
+  $direction: none,
+  $justify: none,
+  $align: none,
+  $content: none,
+  $items: none
+) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-content: $content;
+  align-items: $items;
+}
